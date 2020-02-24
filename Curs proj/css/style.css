@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.backgraund {
+    background: url(../image/banner.jpg) no-repeat center top / cover;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+    padding-bottom: 36px;
+}
+
+.headerLogo {
+    padding-top: 50px;
+}
+
+.headerLogo a img {
+    padding-right: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.headerLogo a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.headerText {
+    padding-top: 206px;
+}
+
+.headerText h2 {
+    color: #f6f9fa;
+    font-size: 48px;
+}
+
+.headerText p {
+    color: #f6f9fa;
+    font-size: 17px;
+}
+
+.headerText:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #f6f9fa;
+    position: absolute;
+    bottom: 5px;
+}
+
+.buttonProject {
+    margin-top: 40px;
+    color: #f6f9fa;
+    border: 2px solid #f6f9fa;
+    border-radius: 0;
+    padding: 10px 46px;
+    text-transform: uppercase;
+}
+
+.buttonProject:hover {
+    color: #000000;
+    background-color: #f6f9fa;
+    border-color: transparent;
+}
+
+.buttonProject:focus {
+    box-shadow: 0 0 0 #f6f9fa;
+}
+
+.buttonProject:disabled {
+    color: #f6f9fa;
+}
+
+.servicesTex {
+    padding-top: 289px;
+    padding-bottom: 100px;
+}
