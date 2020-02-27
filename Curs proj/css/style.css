@@ -1,84 +1,341 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
 body {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
+/* Начало стилей для главной шапки */
+
 .backgraund {
-    background: url(../image/banner.jpg) no-repeat center top / cover;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%;
-    padding-bottom: 36px;
+  background: url(../image/banner.jpg) no-repeat center top / cover;
+  padding-bottom: 225px;
 }
 
 .headerLogo {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .headerLogo a img {
-    padding-right: 10px;
-    position: relative;
-    bottom: 5px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 5px;
 }
 
-.headerLogo a{
-    color: #ffffff;
-    text-decoration: none;
+.headerLogo a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .headerText {
-    padding-top: 206px;
+  padding-top: 206px;
 }
 
 .headerText h2 {
-    color: #f6f9fa;
-    font-size: 48px;
+  color: #f6f9fa;
+  font-size: 48px;
 }
 
 .headerText p {
-    color: #f6f9fa;
-    font-size: 17px;
+  color: #f6f9fa;
+  font-size: 17px;
 }
 
 .headerText:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 20px;
-    background-color: #f6f9fa;
-    position: absolute;
-    bottom: 5px;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #f6f9fa;
+  position: absolute;
+  bottom: 5px;
 }
 
 .buttonProject {
-    margin-top: 40px;
-    color: #f6f9fa;
-    border: 2px solid #f6f9fa;
-    border-radius: 0;
-    padding: 10px 46px;
-    text-transform: uppercase;
+  margin-top: 40px;
+  color: #f6f9fa;
+  border: 2px solid #f6f9fa;
+  border-radius: 0;
+  padding: 10px 46px;
+  text-transform: uppercase;
 }
 
 .buttonProject:hover {
-    color: #000000;
-    background-color: #f6f9fa;
-    border-color: transparent;
+  color: #000000;
+  background-color: #f6f9fa;
+  border-color: transparent;
 }
 
 .buttonProject:focus {
-    box-shadow: 0 0 0 #f6f9fa;
+  box-shadow: 0 0 0 #f6f9fa;
 }
 
 .buttonProject:disabled {
-    color: #f6f9fa;
+  color: #f6f9fa;
+}
+
+/* Конец стилей для главной шапки */
+
+/* Начало стилей для аккордиона */
+
+.services {
+  background-color: #f6f6f6;
+  padding-bottom: 500px;
 }
 
 .servicesTex {
-    padding-top: 289px;
-    padding-bottom: 100px;
+  padding-top: 289px;
+  position: relative;
+}
+
+.servicesTex h2 {
+  font-size: 53px;
+  color: #333333;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.servicesTex h2:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #333333;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.accordionText {
+  padding-top: 83px;
+  font-size: 18px;
+  color: #888888;
+  position: absolute;
+}
+
+.collapseContent {
+  position: relative;
+}
+
+.panelButton {
+  border: none;
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #474747;
+  text-transform: uppercase;
+}
+
+.panelButton p {
+  padding-top: 10px;
+}
+
+.panelButton:hover {
+  border: 1px solid #28282e;
+}
+
+.panelButton:focus {
+  border: 1px solid #28282e;
+  background-color: #28282e;
+  color: #ffffff;
+  outline: none;
+}
+
+.btnBorder {
+  border: none;
+}
+
+.rotateText {
+  transform: rotate(-45deg);
+}
+
+.buttonPosition1 {
+  top: 590px;
+  left: -5px;
+}
+
+.buttonPosition2 {
+  top: 455px;
+  left: 130px;
+}
+
+.buttonPosition3 {
+  top: 321px;
+  left: 265px;
+}
+
+.buttonPosition4 {
+  top: 590px;
+  left: 265px;
+}
+
+.buttonPosition5 {
+  top: 455px;
+  left: 400px;
+}
+
+.buttonPosition6 {
+  top: 321px;
+  left: 534px;
+}
+
+.buttonPosition7 {
+  top: 455px;
+  left: 669px;
+}
+
+.buttonPosition8 {
+  top: 321px;
+  left: 804px;
+}
+
+/* Конец стилей для акоордиона */
+
+/* Стили для визитки */
+
+.ourWorks {
+  padding-top: 122px;
+  padding-bottom: 151px;
+}
+
+.ourWorks h2 {
+  font-size: 53px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.ourWorks p {
+  font-size: 18px;
+  color: #888888;
+}
+
+/* Конец стилей для визитки */
+
+/* Начало стилей для Project Title */
+
+.projectTitle {
+  background-color: #28282e;
+}
+
+.projectContent {
+  padding: 270px 0;
+}
+
+.projectContent .buttonProject {
+  margin-top: 70px;
+}
+
+.projectContent h2 {
+  font-size: 53px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.projectContent h2:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.projectText {
+  font-size: 18px;
+  color: #ffffff;
+  padding-top: 85px;
+}
+
+.projectPictures {
+  text-align: center;
+}
+
+.projectIcon {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.mobIcon {
+  text-align: center;
+}
+
+.projectIcon a {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+/* Конец стилей Project Title */
+
+.readOurMinds {
+  padding-top: 115px;
+}
+
+.tableRead tr th {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tableRead h3 {
+  font-size: 18px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.tableRead p {
+  font-size: 16px;
+  color: #888888;
+}
+
+@media (max-width: 1520px) {
+  .panelButton {
+    width: 135px;
+    height: 135px;
+    font-size: 10px;
+  }
+
+  .buttonPosition1 {
+    top: 590px;
+    left: -45px
+  }
+
+  .buttonPosition2 {
+    top: 486px;
+    left: 60px;
+  }
+
+  .buttonPosition3 {
+    top: 382px;
+    left: 164px;
+  }
+
+  .buttonPosition4 {
+    top: 590px;
+    left: 165px;
+  }
+
+  .buttonPosition5 {
+    top: 486px;
+    left: 270px;
+  }
+
+  .buttonPosition6 {
+    top: 382px;
+    left: 376px;
+  }
+
+  .buttonPosition7 {
+    top: 486px;
+    left: 483px;
+  }
+
+  .buttonPosition8 {
+    top: 382px;
+    left: 589px;
+  }
 }
