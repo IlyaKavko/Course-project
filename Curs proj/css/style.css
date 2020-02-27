@@ -271,8 +271,35 @@ body {
 
 /* Конец стилей Project Title */
 
+/* Начало стилей для таблицы */
+
 .readOurMinds {
   padding-top: 115px;
+}
+
+.readOurMinds h2 {
+  font-size: 53px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.readOurMinds h2:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #333333;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.readOurMinds p {
+  font-size: 18px;
+  color: #888888;
+}
+
+.tableRead {
+  margin-top: 110px;
 }
 
 .tableRead tr th {
@@ -291,6 +318,41 @@ body {
   font-size: 16px;
   color: #888888;
 }
+
+thead tr th:nth-child(2) {
+  padding-right: 230px;
+}
+
+thead tr th:nth-child(3) {
+  padding-right: 89px;
+}
+
+.forest {
+  background: url(../image/Forest.jpg) no-repeat center center / cover ;
+}
+
+.forest td {
+  color: #ffffff;
+}
+
+.forestText h3 {
+  color: #ffffff;
+}
+
+.forestText p {
+  color: #ffffff;
+}
+
+.article {
+  text-align: center;
+  margin-top: 39px;
+}
+
+.article a {
+  color: #ef443a;
+}
+
+/* Конец стилей для таблицы */
 
 @media (max-width: 1520px) {
   .panelButton {
