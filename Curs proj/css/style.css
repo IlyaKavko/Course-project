@@ -156,41 +156,49 @@ body {
 .buttonPosition1 {
   top: 590px;
   left: -5px;
+  overflow: hidden;
 }
 
 .buttonPosition2 {
   top: 455px;
   left: 130px;
+  overflow: hidden;
 }
 
 .buttonPosition3 {
   top: 321px;
   left: 265px;
+  overflow: hidden;
 }
 
 .buttonPosition4 {
   top: 590px;
   left: 265px;
+  overflow: hidden;
 }
 
 .buttonPosition5 {
   top: 455px;
   left: 400px;
+  overflow: hidden;
 }
 
 .buttonPosition6 {
   top: 321px;
   left: 534px;
+  overflow: hidden;
 }
 
 .buttonPosition7 {
   top: 455px;
   left: 669px;
+  overflow: hidden;
 }
 
 .buttonPosition8 {
   top: 321px;
   left: 804px;
+  overflow: hidden;
 }
 
 /* Конец стилей для акоордиона */
@@ -302,16 +310,25 @@ body {
   margin-top: 110px;
 }
 
-.tableRead tr th {
+.tableRead tr {
   border: none;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.tableRead td {
+  border: none;
+  padding-top: 40px;
+}
+
+.tableRead th {
+  border: none;
 }
 
 .tableRead h3 {
   font-size: 18px;
   color: #333333;
   text-transform: uppercase;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .tableRead p {
@@ -328,7 +345,7 @@ thead tr th:nth-child(3) {
 }
 
 .forest {
-  background: url(../image/Forest.jpg) no-repeat center center / cover ;
+  background: url(../image/Forest.jpg) no-repeat center center / cover;
 }
 
 .forest td {
@@ -345,7 +362,7 @@ thead tr th:nth-child(3) {
 
 .article {
   text-align: center;
-  margin-top: 39px;
+  margin: 39px 0;
 }
 
 .article a {
@@ -353,6 +370,134 @@ thead tr th:nth-child(3) {
 }
 
 /* Конец стилей для таблицы */
+
+/* Начало стилей для второго аккордиона */
+
+.panelButtonTeam {
+  border: none;
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #474747;
+  text-transform: uppercase;
+}
+
+.imageSize {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: -27px;
+}
+
+.imageSize:hover:after {
+  content: "";
+  width: 252px;
+  height: 130px;
+  background-color: red;
+  position: absolute;
+  top: 130px;
+  left: 8px;
+  opacity: 0.5;
+}
+
+.imageSize:hover:before {
+  content: "Charlie\00a0waite UI\00a0 Desinger";
+  position: absolute;
+  top: 133px;
+  left: 93px;
+  color: #ffffff;
+  z-index: 1;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/* Коенец стилей для второго аккордиона */
+
+/* Начало стилей для карусели */
+
+.slideshow {
+  background-color: #28282e;
+  padding-bottom: 200px;
+}
+
+.slideshowHeder h2 {
+  text-align: center;
+  color: #f6f6f6;
+  padding-top: 140px;
+  text-transform: capitalize;
+  font-size: 39px;
+}
+
+.slideshowSecondText p {
+  text-align: center;
+  color: #f6f6f6;
+  padding-top: 60px;
+  font-size: 18px;
+}
+
+.carouselTop {
+  margin-top: 60px;
+}
+
+.carouselSizes {
+  width: 963px;
+  height: 456px;
+}
+
+.carouselIndicators {
+  bottom: -90px;
+}
+
+.carouselIndicators li {
+  width: 11px;
+  height: 11px;
+  background-color: #1e1e20;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-radius: 100%;
+  margin-right: 40px;
+}
+
+.carouselIndicators .active {
+  background-color: #ffffff;
+}
+
+/* Конец стилей для карусели */
+
+/* Начало стилей для футера */
+
+.redBackgraund {
+  background-color: #ef4035;
+}
+
+.letsTalkText {
+  padding: 55px 0;
+  text-align: center;
+}
+
+.letsTalkText a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.letsTalkText a:hover {
+  text-decoration: underline;
+}
+
+.darckBackgraund {
+  background-color: #28282e;
+}
+
+.footerText {
+  padding: 70px;
+  color: #76767b;
+  font-size: 13px;
+}
 
 @media (max-width: 1520px) {
   .panelButton {
@@ -363,7 +508,7 @@ thead tr th:nth-child(3) {
 
   .buttonPosition1 {
     top: 590px;
-    left: -45px
+    left: -45px;
   }
 
   .buttonPosition2 {
@@ -399,5 +544,25 @@ thead tr th:nth-child(3) {
   .buttonPosition8 {
     top: 382px;
     left: 589px;
+  }
+
+  .panelButtonTeam {
+    width: 135px;
+    height: 135px;
+    font-size: 10px;
+  }
+
+  .imageSize:hover:after {
+    width: 190px;
+    height: 100px;
+    top: 114px;
+    left: 33px;
+  }
+
+  .imageSize:hover:before {
+    top: 117px;
+    left: 93px;
+    z-index: 1;
+    font-size: 12px;
   }
 }
