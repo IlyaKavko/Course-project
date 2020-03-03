@@ -1,3 +1,5 @@
+@import "../fonts/stylesheet.css";
+
 * {
   margin: 0;
 }
@@ -5,6 +7,31 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;
+}
+
+p {
+  font-family: 'Proxima Nova Rg', Verdana, Tahoma, sans-serif;
+}
+
+th {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;
+}
+
+td {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;
+}
+
+a {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;;
 }
 
 /* Начало стилей для главной шапки */
@@ -25,6 +52,8 @@ body {
 }
 
 .headerLogo a {
+  font-family: 'Proxima Nova Rg', Verdana, Tahoma, sans-serif;
+  font-weight: normal;
   color: #ffffff;
   text-decoration: none;
 }
@@ -34,6 +63,8 @@ body {
 }
 
 .headerText h2 {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;;
+  font-weight: normal;
   color: #f6f9fa;
   font-size: 48px;
 }
@@ -47,7 +78,7 @@ body {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   background-color: #f6f9fa;
   position: absolute;
   bottom: 5px;
@@ -91,7 +122,7 @@ body {
 }
 
 .servicesTex h2 {
-  font-size: 53px;
+  font-size: 46px;
   color: #333333;
   position: relative;
   text-transform: uppercase;
@@ -101,7 +132,7 @@ body {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   background-color: #333333;
   position: absolute;
   margin-top: 30px;
@@ -131,6 +162,8 @@ body {
 }
 
 .panelButton p {
+  font-family: 'Proxima Nova Lt', Verdana, Tahoma, sans-serif;
+  font-weight: 600;
   padding-top: 10px;
 }
 
@@ -211,7 +244,7 @@ body {
 }
 
 .ourWorks h2 {
-  font-size: 53px;
+  font-size: 46px;
   color: #333333;
   text-transform: uppercase;
 }
@@ -238,7 +271,7 @@ body {
 }
 
 .projectContent h2 {
-  font-size: 53px;
+  font-size: 46px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -247,7 +280,7 @@ body {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   background-color: #ffffff;
   position: absolute;
   margin-top: 30px;
@@ -269,15 +302,49 @@ body {
 }
 
 .mobIcon {
-  text-align: center;
+  background: url(../image/mob.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 50px;
+}
+
+.mobIcon:focus {
+  background: url(../image/mobActive.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 50px;
+}
+
+.tabIcon {
+  background: url(../image/tab.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 60px;
+}
+
+.tabIcon:focus {
+  background: url(../image/tabActive.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 60px;
+}
+
+.macIcon {
+  background: url(../image/mac.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 55px;
+}
+
+.macIcon:focus {
+  background: url(../image/macActive.png) no-repeat;
+  padding-bottom: 26px;
+  padding-right: 55px;
 }
 
 .projectIcon a {
   padding-left: 20px;
   text-decoration: none;
+  left: 60px;
+  position: relative;
 }
 
-.swithes a{
+.swithes a {
   width: 2px;
   height: 25px;
   background-color: #f6f6f6;
@@ -307,21 +374,25 @@ body {
 }
 
 
-.сoming h3 {
+.сoming h2 {
   color: #f6f9fa;
   font-size: 53px;
   position: relative;
   bottom: 153px;
 }
 
-.сoming h3:after {
+.сoming h2:after {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   background-color: #f6f9fa;
   position: absolute;
   margin-top: 15px;
+}
+
+.focusIcon {
+  background-image: url();
 }
 
 /* Конец стилей Project Title */
@@ -333,7 +404,7 @@ body {
 }
 
 .readOurMinds h2 {
-  font-size: 53px;
+  font-size: 46px;
   color: #333333;
   text-transform: uppercase;
 }
@@ -342,7 +413,7 @@ body {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   background-color: #333333;
   position: absolute;
   margin-top: 15px;
@@ -369,6 +440,9 @@ body {
 
 .tableRead th {
   border: none;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: normal;
 }
 
 .tableRead h3 {
@@ -413,12 +487,26 @@ thead tr th:nth-child(3) {
 }
 
 .article a {
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
   color: #ef443a;
 }
 
 /* Конец стилей для таблицы */
 
 /* Начало стилей для второго аккордиона */
+
+.servicesTex a {
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
+  text-decoration: none;
+  position: relative;
+  top: 9px;
+  left: 45px;
+  color: #ef443a;
+}
+
+.servicesTex a:hover {
+  text-decoration: underline;
+}
 
 .panelButtonTeam {
   border: none;
@@ -459,6 +547,7 @@ thead tr th:nth-child(3) {
   z-index: 1;
   font-size: 15px;
   text-transform: capitalize;
+  font-family: 'Proxima Nova Rg', Verdana, Tahoma, sans-serif;
 }
 
 /* Коенец стилей для второго аккордиона */
@@ -471,6 +560,8 @@ thead tr th:nth-child(3) {
 }
 
 .slideshowHeder h2 {
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
+  font-weight: normal;
   text-align: center;
   color: #f6f6f6;
   padding-top: 140px;
@@ -527,6 +618,7 @@ thead tr th:nth-child(3) {
 }
 
 .letsTalkText a {
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
@@ -547,6 +639,10 @@ thead tr th:nth-child(3) {
 }
 
 @media (max-width: 1520px) {
+  .accordionText {
+    font-size: 16px;
+  }
+
   .panelButton {
     width: 135px;
     height: 135px;
