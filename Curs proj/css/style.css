@@ -277,6 +277,53 @@ body {
   text-decoration: none;
 }
 
+.swithes a{
+  width: 2px;
+  height: 25px;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  opacity: 0.5;
+}
+
+.swithes a:focus {
+  opacity: 1;
+}
+
+.swithes a:nth-child(1) {
+  bottom: 240px;
+}
+
+.swithes a:nth-child(2) {
+  bottom: 205px
+}
+
+.swithes a:nth-child(3) {
+  bottom: 170px;
+}
+
+.swithes a:nth-child(4) {
+  bottom: 135px;
+}
+
+
+.сoming h3 {
+  color: #f6f9fa;
+  font-size: 53px;
+  position: relative;
+  bottom: 153px;
+}
+
+.сoming h3:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #f6f9fa;
+  position: absolute;
+  margin-top: 15px;
+}
+
 /* Конец стилей Project Title */
 
 /* Начало стилей для таблицы */
